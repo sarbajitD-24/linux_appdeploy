@@ -1,0 +1,5 @@
+- hosts: localhost
+  roles:
+  - 01-create-dir
+  - 02-download-artiact
+  - 03-extract-artifact

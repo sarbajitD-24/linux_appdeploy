@@ -1,0 +1,8 @@
+# tasks file for role name 01-create-dir
+
+- name: create directory
+  file:
+    path: "{{ Workdir }}/apps"
+    state: directory
+    mode: '0755'
+  become: true

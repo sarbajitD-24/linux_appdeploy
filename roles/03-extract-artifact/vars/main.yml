@@ -1,0 +1,2 @@
+AppDeployDir: /home/ec2-user/apps
+#ExtractToDir: /home/ec2-user/apps/sample-1

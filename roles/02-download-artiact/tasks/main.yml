@@ -1,0 +1,8 @@
+#tasks file for role name 02-download-artiact
+
+- name: download target artifact
+  get_url:
+    url: https://grass.osgeo.org/sampledata/north_carolina/nc_basic_spm_grass7.tar.gz
+    dest: "{{ AppDeployDir }}"
+    mode: 0755
+  become: true

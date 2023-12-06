@@ -1,0 +1,6 @@
+#tasks file for role name 03-extract-artifact
+- name: Extract the Artifact
+  unarchive:
+    src: "{{ AppDeployDir }}/nc_basic_spm_grass7.tar.gz"
+    dest: "{{ AppDeployDir }}"
+  become: true
