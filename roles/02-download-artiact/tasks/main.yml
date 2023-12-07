@@ -5,4 +5,4 @@
     url: https://grass.osgeo.org/sampledata/north_carolina/nc_basic_spm_grass7.tar.gz
     dest: "{{ AppDeployDir }}"
     mode: 0755
-  become: true
+  become_user: ec2_user
