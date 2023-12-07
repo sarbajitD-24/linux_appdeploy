@@ -1,0 +1,27 @@
+pipeline {
+    
+    agent any
+    
+    stages {
+        stage('Clean UP Workspace') {
+            steps {
+                cleanWs()
+            }
+        }
+        
+        stage('SCM Checkout') {
+            steps {
+                
+                git branch: 'main', url: 'https://github.com/sarbajitD-24/linux_appdeploy.git'
+                
+            }
+        }
+        
+        stage('Execute Ansible Playbook')  {
+            steps {
+             ansiblePlaybook installation: 'Ansible', inventory: 'hosts', playbook: 'appdeploy.yaml'   
+            }
+        }
+        
+    }    
+}
