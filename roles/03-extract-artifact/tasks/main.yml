@@ -3,4 +3,5 @@
   unarchive:
     src: "{{ AppDeployDir }}/nc_basic_spm_grass7.tar.gz"
     dest: "{{ AppDeployDir }}"
+    remote_src: yes
   become_user: ec2_user
