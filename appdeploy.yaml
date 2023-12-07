@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: hostmachine
   roles:
   - 01-create-dir
   - 02-download-artiact
